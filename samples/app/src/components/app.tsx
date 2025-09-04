@@ -7,7 +7,12 @@ const App = () => {
     const blurFilter = useMemo(() => new BlurFilter(2), []);
     const bunnyUrl = 'https://react.pixijs.io/v7/img/bunny.png';
     return (
-        <Stage width={800} height={600} options={{ background: 0x1099bb }}>
+        <Stage
+            width={800}
+            height={600}
+            options={{ background: 0x1099bb }}
+            style={{ width: '100%' }}
+        >
             <Sprite image={bunnyUrl} x={300} y={150} />
             <Sprite image={bunnyUrl} x={500} y={150} />
             <Sprite image={bunnyUrl} x={400} y={200} />
