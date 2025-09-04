@@ -56,6 +56,10 @@ button:focus-visible {
 
 #root {
   margin: auto;
+  & > canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 
 @media (prefers-color-scheme: light) {
